@@ -7,32 +7,30 @@ body {
     width: 100vw;
     height: 350vh;
     background: yellow;
-    font-size: 24px;
+    font-size: 16px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
 }
 
 header {
-    width: 100%;
     flex: 1;
     background: green;
 } 
 
 main {
-    width: 100%;
     flex: 15;
     background: purple;
 }
 
 footer {
-    width: 100%;
     flex: 1;
     background: blue;
 }
 
 #cart, img {
     width: 20%;
+    height: 20%
 }
  
 #symbol {
@@ -40,15 +38,24 @@ footer {
 }
 
 header section {
+    display: flex;
+    flex-direction: row;
     border: 2px solid black;
 }
 
-header section:first-child {
-    display: flex;
-    flex-direction: row;
-}
 
-header section nav:first-child {
+#navcontainer nav {
+    
     background-color: salmon;
 }
 
+li {
+    display: flex;
+    flex-flow: row nowrap;
+    text-transform: uppercase;
+    list-style: none;
+    display: inline-block;
+    justify-content: space-between;
+    align-items: right;
+    padding: 0 5px;
+}
