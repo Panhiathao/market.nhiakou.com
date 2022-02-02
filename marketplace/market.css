@@ -28,9 +28,13 @@ footer {
     background: blue;
 }
 
-#cart, img {
+#cart {
+    width: 10%;
+    height: 10%;
+}
+
+img {
     width: 20%;
-    height: 20%
 }
  
 #symbol {
@@ -57,5 +61,36 @@ li {
     display: inline-block;
     justify-content: space-between;
     align-items: right;
-    padding: 0 5px;
+    padding: 0 5px; 
+
+}
+
+#searchcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    font-size: 16px;
+    padding: 10px;
+}
+
+#fruit {
+    display: flex;
+    flex-direction: row;
+    border: 5px solid black;
+}
+
+
+#product {
+    border: 2px solid black;
+    background: seagreen;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#productitem {
+    position: absolute;
 }
